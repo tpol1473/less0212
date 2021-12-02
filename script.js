@@ -61,4 +61,34 @@ console.log(a && b) //
 console.log(!a) // true
 console.log(!!a) // false
 console.log(+a) // 0
-console.log(a + b) //
+
+const a = 'a';
+const b = 5;
+console.log(a + b) // 'a5'
+
+const a = '4';
+const b = {};
+console.log(a + b) // 4[object object]
+
+const a = '4';
+const b = 3;
+console.log(a - b) // 1
+
+const a = '4';
+const b = 3;
+console.log(a + - b) // 4-3
+console.log(a - - b) // 7
+
+const a = '4';
+const b = {};
+console.log(a - b) // NaN
+
+const a = '4';
+const b = [];
+console.log(a * b) // 0
+
+const a = '4';
+const b = ['9']; // '9'  // 9
+console.log(a * b) // 36
+console.log(typeof +a) // number
+console.log(typeof +undefined) // NaN  number
